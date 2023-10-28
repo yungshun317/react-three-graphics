@@ -1,5 +1,9 @@
 import ReactDOM from "react-dom/client";
-import "./styles.css";
+// import "./styles.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<>React Three Fiber Application</>);
+root.render(
+    <>
+        React Three Fiber Application
+    </>
+);
