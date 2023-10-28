@@ -1,9 +1,10 @@
 import { useFrame, extend, useThree } from "@react-three/fiber";
 import { useRef } from "react";
 import * as THREE from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import { OrbitControls } from "@react-three/drei";
+// import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
-extend({ OrbitControls: OrbitControls });
+// extend({ OrbitControls: OrbitControls });
 
 const Scene = () => {
     const cubeRef = useRef();
@@ -20,7 +21,8 @@ const Scene = () => {
 
     return (
         <>
-            {<orbitControls args={[camera, gl.domElement]} />}
+            { /* <orbitControls args={[camera, gl.domElement]} /> */ }
+            {<OrbitControls />}
 
             <mesh ref={planeRef} position-x={-2}>
                 <planeGeometry args={[2, 2]} />
