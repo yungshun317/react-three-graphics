@@ -1,7 +1,7 @@
 import ReactDOM from "react-dom/client";
 import { Canvas } from "@react-three/fiber";
 import Scene from "./Scene";
-// import "./styles.css";
+import "./styles.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
